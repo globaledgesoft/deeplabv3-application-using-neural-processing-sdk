@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QC Image Segmentation</string>
+    <string name="picture">Take Picture</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="dialog_image_segmentation">Image Segmentation</string>
+    <string name="dialog_segmentation_process">Segmentation in Process...</string>
+    <string name="image_segmentation">Image Segmentation</string>
+    <string name="original_image">Original Image</string>
+    <string name="segmented_image">Segmented Image</string>
+</resources>
