@@ -2,9 +2,9 @@
 
 The project is designed to utilize the Qualcomm Neural Processing SDK, a deep learning software from Qualcomm Snapdragon Platforms. The Neural Processing SDK is used to convert trained models from Caffe, Caffe2, ONNX, TensorFlow to Snapdragon supported format (.dlc format). We further utilize these models in Android application to perform semantic segmentation using DeepLab V3 support in NPE.
 ## Pre-requisites
-* Before starting the Andhttps://github.com/jinka2015/QDN-DeepLabV3-NPE/blob/master/AndroidApplication/app/src/main/res/drawable/snapdragon_hdk.jpgroid application, please follow the instructions for setting up SNPE using the link provided.
+* Before starting the Android application, please follow the instructions for setting up SNPE using the link provided.
 	https://developer.qualcomm.com/docs/snpe/setup.html. 
-* Android device 6.0 and above which uses below mentioned Snapdragon processors/Snapdragon HDK with display can be used to test the application
+* Android device 6.0 and above which uses below mentioned Snapdragon processors/Snapdragon HDK with display can be used to test the application.
 
 ## List of Supported Snapdragon Devices
 
@@ -41,10 +41,10 @@ QDN Image Segmentation application opens a camera preview, clicks a picture and 
 
 
 ## Steps to Install and Run the Application
-* Firstly set up the hardware as shown above in the hardware setup section
-* Power on the Snapdragon HDK board
-* Connect the Dev-Board/Android phone via USB to the device
-* Switch on the display and choose the USB connection option to File Transfer
+* Firstly set up the hardware as shown above in the hardware setup section.
+* Power on the Snapdragon HDK board.
+* Connect the Dev-Board/Android phone via USB to the device.
+* Switch on the display and choose the USB connection option to File Transfer.
 * Check if ADB is installed in the windows/linux device, if not follow the below instructions in the below link to install
 	https://developer.android.com/studio/command-line/adb.html.
 * Use the below command to install the apk with the connected device with help of adb. [Download APK(Debug)](https://github.com/jinka2015/QDN-DeepLabV3-NPE/blob/master/AndroidApplication/output/qdn_segmentation.apk)
