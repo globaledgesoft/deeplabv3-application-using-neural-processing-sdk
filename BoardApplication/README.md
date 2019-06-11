@@ -1,10 +1,10 @@
-# QDN DeepLabV3 Board Application
+# DeepLabV3 Board Application
 
 The application demonstrates the Image semantic segmentation. DeepLabV3 is used in this application, which is an algorithm implemented by Google for semantic segmentation.
 
 This will classify the object in each pixel from given portrait image and assigns the label to each of them. Image semantic segmentation is helpful in applications like background change, portrait mode, etc.
 
-To develop a DeepLabV3 model for image segmentation we use Snapdragon mobile platforms(SD835) and Qualcomm's Neural Processing Engine(NPE) SDK.
+To develop a DeepLabV3 model for image segmentation we use Snapdragon mobile platforms(SD835) and Qualcomm Neural Processing SDK.
 ## Recommended setup for model training
 ### Hardware prerequisite
 1. Intel i5 or greater
@@ -60,11 +60,11 @@ Note: By default the iteration count in  local_test.sh is 10, if required kindly
 
 ## How to convert Tensorflow's model into DLC?
 
-Prerequisites: Neural Processing Engine SDK setup. Use the instructions from the below link to make the setup,
+Prerequisites: Qualcomm Neural Processing SDK setup. Use the instructions from the below link to make the setup,
 
 https://developer.qualcomm.com/software/qualcomm-neural-processing-sdk/getting-started
 
-- Initialize the environmental variables of NPE SDK with tensorflow.
+- Initialize the environmental variables of Qualcomm Neural Processing SDK with tensorflow.
 
 - The model is trained using TensorFlow framework and exported to graph file with .pb extension.
     
@@ -73,11 +73,11 @@ https://developer.qualcomm.com/software/qualcomm-neural-processing-sdk/getting-s
 $ snpe-tensorflow-to-dlc –graph deeplabv3_mnv2_pascal_train_aug/frozen_inference_graph.pb -i sub_7 1,513,513,3 --out_node ArgMax --dlc deeplabv3.dlc --allow_unconsumed_nodes
 ```
 
-## Inference on Ubuntu using Qualcomm’s Neural Processing Engine SDK
+## Inference on Ubuntu using Qualcomm Neural Processing SDK
 
-Qualcomm’s NPE SDK doesn’t support direct images as an input to the model for inference.
+Qualcomm Neural Processing SDK doesn’t support direct images as an input to the model for inference.
 
-NPE SDK requires the NumPy array stored as a raw file. In order to run the application in NPE SDK we need to preprocess the input image. 
+Neural Processing SDK requires the NumPy array stored as a raw file. In order to run the application in SDK we need to preprocess the input image. 
 
 Following are the details of pre-processing steps followed in src/deep_input_raw.py file,
 

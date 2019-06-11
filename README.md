@@ -1,1 +1,1 @@
-## QDN DeepLabV3 Application
+## DeepLabV3 Application
