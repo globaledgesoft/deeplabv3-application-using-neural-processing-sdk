@@ -1,7 +1,7 @@
-'''Qualcomm’s NPE SDK Doesn’t support direct images as an input for the model for inferencing.
-	NPE SDK requires the Numpy array which is stored in raw form on secondary storage. 
+'''Qualcomm Neural Processing SDK Doesn’t support direct images as an input for the model for inferencing.
+	This SDK requires the Numpy array which is stored in raw form on secondary storage. 
 	In order to run the application in Neural Processing SDK we should firstly have to do 
-	some basic image pre-processing to pass the input to the Neural Process SDK.'''
+	some basic image pre-processing to pass the input to the SDK.'''
 
 
 # Library Import
